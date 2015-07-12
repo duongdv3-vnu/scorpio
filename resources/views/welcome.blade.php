@@ -259,7 +259,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="port-grid">
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="images/p6.jpg" /><div class="b-wrapper">
+								     <img src="images/DuongDV3.jpg" /><div class="b-wrapper">
 								  	</div></a>
 								</div>
 								<div class="port-grid-text port-grid-text-c">
