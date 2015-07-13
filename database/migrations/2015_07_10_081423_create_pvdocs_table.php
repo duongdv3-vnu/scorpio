@@ -14,13 +14,13 @@ class CreatePvdocsTable extends Migration
     {
         Schema::create('pvdocs', function (Blueprint $table) {
             /*
-             |----------------------------------------------
-             | id          |
-             |----------------------------------------------
-             | doc_name    | Save name of P-voucher document
-             |----------------------------------------------
-             | time_stamp  |
-             |----------------------------------------------
+             |----------------------------------------------+
+             | id          |                                |
+             |----------------------------------------------+
+             | doc_name    | Save name of P-voucher document|
+             |----------------------------------------------+
+             | time_stamp  |                                |
+             |----------------------------------------------+
              */
             $table->increments('id');
             $table->string('doc_name');
