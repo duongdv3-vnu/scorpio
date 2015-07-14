@@ -8,6 +8,17 @@
 <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="/css/animate.css" rel="stylesheet" type="text/css" />
 <link href="/css/admin.css" rel="stylesheet" type="text/css" />
+<link href="/plugins/toggle-switch/toggles.css" type="text/css" />
+<script src="/js/jquery-2.1.0.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/common-script.js"></script>
+<script src="/js/jquery.slimscroll.min.js"></script>
+<script src="/js/jPushMenu.js"></script>
+<script src="/js/side-chats.js"></script>
+<script src="/plugins/toggle-switch/toggles.min.js"></script>
+<script src="/js/angular.min.js"></script>
+
 </head>
 <body class="light_theme  fixed_header left_nav_fixed">
 <div class="wrapper">
@@ -73,10 +84,10 @@
                   <li>
                     <p class="number">You have 4 mails</p>
                   </li>
-                      <li> <a href="readmail.html" class="mail"> <span class="photo"><img src="images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
-                  <li> <a href="readmail.html" class="mail"> <span class="photo"><img src="images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
-                  <li> <a href="readmail.html" class="mail red_color"> <span class="photo"><img src="images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
-                  <li> <a href="readmail.html" class="mail"> <span class="photo"><img src="images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
+                      <li> <a href="readmail.html" class="mail"> <span class="photo"><img src="/images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
+                  <li> <a href="readmail.html" class="mail"> <span class="photo"><img src="/images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
+                  <li> <a href="readmail.html" class="mail red_color"> <span class="photo"><img src="/images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
+                  <li> <a href="readmail.html" class="mail"> <span class="photo"><img src="/images/user.png" /></span> <span class="subject"> <span class="from">sarat m</span> <span class="time">just now</span> </span> <span class="message">Hello,this is an example msg.</span> </a> </li>
               
                 </ul>
               </li>
@@ -94,7 +105,7 @@
             </ul>
           </div>
         </div>
-        <div class="user_admin dropdown"> <a href="javascript:void(0);" data-toggle="dropdown"><img src="images/user.png" /><span class="user_adminname">{{ Auth::user()->user_name }}</span> <b class="caret"></b> </a>
+        <div class="user_admin dropdown"> <a href="javascript:void(0);" data-toggle="dropdown"><img src="/images/user.png" /><span class="user_adminname">{{ Auth::user()->user_name }}</span> <b class="caret"></b> </a>
           <ul class="dropdown-menu">
             <div class="top_pointer"></div>
             <li> <a href="profile.html"><i class="fa fa-user"></i> Profile</a> </li>
@@ -216,7 +227,7 @@
         </div>
         <div class="pull-right">
           <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li class="active">@yield('page_title')</li>
           </ol>
         </div>
@@ -333,35 +344,5 @@
 </nav>
 <!-- /sidebar chats -->
 @show
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/jquery-2.1.0.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/common-script.js"></script>
-<script src="js/jquery.slimscroll.min.js"></script>
-<script src="js/jPushMenu.js"></script> 
-<script src="js/side-chats.js"></script>
 </body>
 </html>

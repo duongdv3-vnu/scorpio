@@ -34,3 +34,11 @@ Route::controllers([
 Route::get('/home', ['middleware' => 'auth', function(){
     return view('home');
 }]);
+
+Route::get('/home/users', function(){
+    return view('user.edit_users');
+});
+
+Route::get('/home/users/list', function(){
+    return App\User::all()->toArray();
+});
