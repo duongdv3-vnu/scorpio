@@ -32,5 +32,16 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $hidden = ['password', 'remember_token',
-        'id', 'created_at', 'updated_at'];
+        'created_at', 'updated_at'];
+
+
+
+    /**
+     * @return bool
+     */
+    public function getIsActivatedAttribute()
+    {
+        return $this->attributes['is_activated'] ? 'YES' : 'NO';
+    }
+
 }

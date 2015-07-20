@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -36,9 +38,13 @@ Route::get('/home', ['middleware' => 'auth', function(){
 }]);
 
 Route::get('/home/users', function(){
-    return view('user.edit_users');
+    return view('user.users_list');
 });
 
 Route::get('/home/users/list', function(){
-    return App\User::all()->toArray();
+    return User::all();
+});
+
+Route::get('/home/users/edit/{user_id}', function(){
+    return view('user.users_list');
 });

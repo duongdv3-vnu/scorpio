@@ -8,7 +8,7 @@ angular.module('manageUser', [])
         /*
          * Get list of user from DB
          */
-        $http(
+        /*$http(
             {
                 method: 'get',
                 url: '/home/users/list'
@@ -16,6 +16,10 @@ angular.module('manageUser', [])
         ).success(function(data){
                 userList.users = data;
             });
+            */
+        $http.get('/home/users/list').success(function (data){
+           userList.users = data;
+        });
 
         userList.showEdit = false;
 

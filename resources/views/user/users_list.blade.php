@@ -56,8 +56,8 @@
                       <td> @{{ user.role }} </td>
                       <td> @{{ user.permission }}</td>
                       <td> @{{ user.is_activated }} </td>
-                      <td><a class="edit" href="javascript:;">Edit</a></td>
-                      <td><a class="delete" href="javascript:;">Reset</a></td>
+                      <td><a class="btn btn-primary" href="/home/users/edit/@{{ user.id }}">Edit</a></td>
+                      <td><a class="btn btn-danger" href="/home/users/reset/@{{ user.id }}">Reset</a></td>
                   </tr>
                   <tr ng-show="userList.showEdit">
                       <td><input ng-model="userList.newUserName" type="text" placeholder="User name" class="form-control small" show-focus="userList.showEdit"></td>
@@ -65,8 +65,8 @@
                       <td>MEMBER</td>
                       <td>Member</td>
                       <td>NO</td>
-                      <td><a href="javascript:;" ng-click="userList.addUser()">Save</a></td>
-                      <td><a href="javascript:;" ng-click="userList.hideAddUserArea()">Cancel</a></td>
+                      <td><a class="btn btn-primary" href="javascript:;" ng-click="userList.addUser()">Save</a></td>
+                      <td><a class="btn btn-danger"  href="javascript:;" ng-click="userList.hideAddUserArea()">Cancel</a></td>
                   </tr>
                   </tbody>
               </table>
